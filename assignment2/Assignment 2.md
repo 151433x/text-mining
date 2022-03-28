@@ -1,0 +1,29 @@
+# Assignment 2
+## project Overivew:
+
+
+I used the IMDB data set that was provided in the original assignment. I used summary statistics, visualizations, and sentiment to find each actor's work and the genres of their movies as well as the sentiment of some reviews. I hoped to learn more about using different packages in python including visualization packages like MatPlotLib.
+
+## Implementation
+
+- Download and install Cinemagoer,MatplotLib and nltk
+- created and stored reviews from Cinemagoer into a review function so that any inputted movie could yield some reviews 
+- found that the text analysis function has trouble with lists so I could only analyze one movie at a time
+- branched off into being able to summarize the genre of an actor's work
+- created visualizations to show analysis and understanding of the dataset
+
+Originally I was planning on only using text sentiment analysis until I ran into an issue with incorporating lists into the sentiment code. that was a key point of my analysis and I could not get it to accept lists or multiple movie reviews. I started with the creation of lists to incorporate multiple reviews for each movie, as well as other movies to analyze them all at once. However, since that did not work I ended up looking at an analysis of a singular movie review and its sentiment vs the average of 5 other movies within the same genre. this was the second evolution of the project and it seemed interesting to me but I ended up running into a problem on how the data was saved in different places. the third and final evolution of the project was looking at actors and their work. Using Jim Carrey as an example, 
+
+I found that many actors end up concentrating on a certain movie genre. This makes sense as actors are normally famous or good at a singular role. I found this evidence in looking at the concentration of genres in their filmography. Jim Carrey's was mainly comedy movies. first I used reviews to generate actor lists and actor IDs. from there I used those actorID's to find all movies where the actor ID was seen in an 'actor role'. 
+
+the imbd data set was very interesting to work on as there were many nuances to it. depending on the function I used there were multiple ways to call names and actorID's. However, not all of those had any other information. for instance, get.actor only had actor name and actorID in it. I ended up having to input movies first and gather actors from those movies to find actor IDs.Originally the code finds actors in the movie and then generates ids for those actors. However, search_person had that information as well a lot more information that was not relevant. this was important as I had to use some functions for certain purposes and others for different purposes. I ended up getting confused as I had 4 different functions to get to the same initial information but different information about roles and movie list, etc. 
+
+## Results
+As previously mentioned the results of the assignment are not what I thought the assignment would produce. I went from result to result trying things and finding that getting different packages to work together is extremely frustrating. Moving from goal to goal is difficult, to say the least. However, I still learned and got a product that I felt I put a lot of effort into as well I am satisfied with the result of the assignment. I found the visualizations to be interesting. for Jim Carrey as stated below, I found a huge amount of concentration of genres for him. 
+![Alt text](C:\Users\x1514\Desktop\Assignment2\Figure_1.png)
+I also find that this is the case for many major actors. Once an actor is known for doing something well or is at least well known their roles become much more similar. One of the major problems I ran into is bad data. when looking for the genres of movies, some movies had no genres attached to them so some actors worked and some actors did not. I think this is due to some movies being extremely unknown while others have much more attention and reach. this made the code difficult to debug as I was not sure if I had made a mistake in my coding, so I kept looking for something that wasn't there. Just like Jim Carrey, Matt Damon, and Will Smith all specialize in certain genres.
+![alt text](C:\Users\x1514\Desktop\Assignment2\figure_2.png)
+![Alt text](C:\Users\x1514\Desktop\Assignment2\figure_3.png)
+
+## Reflection
+There are still kinks to work out, some of the code is not used at all for the project and are just remnants of previous goals. Also, some names just do not work. I put in Angelina Jollie and it says that she has no movies in any category. I know this is not true and I'm not sure why it doesn't work. I think something that I've realized is the utility of clean data. This data was not as clean as it could be and it made life a living nightmare. I think if I would have done this over again, I would have taken a look at the health of the data first, and then make a plan on how to analyze it. I kind of just jumped in headfirst and that made me backtrack a substantial amount. In that sense, My project was not scoped well at all and did not have a good plan for testing. Testing was easy but it would have been much easier if I had just taken some time to get acquainted with the Data set before jumping right in. I think for things that went well, I thought this format of homework helped me gain a ton of experience with coding and it felt more valuable than some of the other exercises. I learned a lot and it helped assure myself that I knew somewhat what I am doing. I also think the time constraint was good. Having more time to code makes it feel like there are always more optimal solutions. I think the plan moving forward for assignments like this is to take my time in the beginning and get more familiar with making a game plan instead of just blindly going into a problem.  
